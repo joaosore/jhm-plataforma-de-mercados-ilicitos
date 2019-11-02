@@ -1,0 +1,108 @@
+#portfolio {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    position: relative;
+    background-image: url(./imgs/bg_02.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .links {
+      max-width: 1280px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      .portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+          font-family: "Futura Std";
+          font-size: 2.1875em;
+          text-align: center;
+          margin: 0;
+          padding-bottom: 25px;
+        }
+        .imagem {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .bottom {
+            position: absolute;
+            z-index: 1;
+          }
+        }
+        span {
+          font-family: "Futura Std";
+          font-size: 0.9375em;
+          max-width: 61px;
+          padding-top: 30px;
+          padding-bottom: 6.5px;
+          border-bottom: solid;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #portfolio {
+    .mobile {
+      display: block;
+      position: relative;
+      background-image: url(./imgs/bg_02.png);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 32px 0 32px 0;
+        h1 {
+          font-family: "Futura Std";
+          font-size: 2.1875em;
+          text-align: center;
+          margin: 0;
+          padding-bottom: 25px;
+        }
+        .imagem {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .bottom {
+            position: absolute;
+            width: unset;
+            z-index: 1;
+          }
+        }
+        span {
+          font-family: "Futura Std";
+          font-size: 0.9375em;
+          max-width: 61px;
+          padding-top: 30px;
+          padding-bottom: 6.5px;
+          border-bottom: solid;
+          cursor: pointer;
+        }
+      }
+    }
+    .desktop {
+      display: none;
+    }
+  }
+}
